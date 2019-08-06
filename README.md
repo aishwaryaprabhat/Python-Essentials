@@ -19,9 +19,6 @@ myvar = 10
 print(myvar)
 ```
 
-    10
-
-
 A new method is defined using the def keyword
 
 
@@ -38,10 +35,6 @@ In the previous cell we have only created a method so nothing is actually printe
 my_print_method()
 ```
 
-    Hello
-    World
-
-
 Parameters are inputs to a method
 
 
@@ -50,9 +43,6 @@ def my_print_method(parameter):
     print(parameter)
 my_print_method("parameter")
 ```
-
-    parameter
-
 
 The "return" keyword represents what the function outputs or returns upon completing execution
 
@@ -65,9 +55,6 @@ value = my_method(5,3)
 print(value)
 ```
 
-    15
-
-
 ## Lists, Tuples & Sets
 
 
@@ -79,24 +66,10 @@ average_grade
 ```
 
 
-
-
-    85.0
-
-
-
-
 ```python
 grades.append(95)
 grades
 ```
-
-
-
-
-    [80, 85, 90, 95]
-
-
 
 
 ```python
@@ -104,13 +77,6 @@ grades
 grades[1] = 100
 grades
 ```
-
-
-
-
-    [80, 100, 90, 95]
-
-
 
 ### List Comprehension
 
@@ -121,72 +87,9 @@ multiply_list
 ```
 
 
-
-
-    [0, 3, 6, 9, 12]
-
-
-
-
 ```python
 [n for n in range(100) if n%2==0]
 ```
-
-
-
-
-    [0,
-     2,
-     4,
-     6,
-     8,
-     10,
-     12,
-     14,
-     16,
-     18,
-     20,
-     22,
-     24,
-     26,
-     28,
-     30,
-     32,
-     34,
-     36,
-     38,
-     40,
-     42,
-     44,
-     46,
-     48,
-     50,
-     52,
-     54,
-     56,
-     58,
-     60,
-     62,
-     64,
-     66,
-     68,
-     70,
-     72,
-     74,
-     76,
-     78,
-     80,
-     82,
-     84,
-     86,
-     88,
-     90,
-     92,
-     94,
-     96,
-     98]
-
-
 
  ### Sets
 
@@ -198,13 +101,6 @@ grades_set
 ```
 
 
-
-
-    {32, 77, 88, 99, 222, 4456, 111111}
-
-
-
-
 ```python
 grades_set.add(10101010)
 ```
@@ -213,13 +109,6 @@ grades_set.add(10101010)
 ```python
 grades_set
 ```
-
-
-
-
-    {32, 77, 88, 99, 222, 4456, 111111, 10101010}
-
-
 
 ### Set intersection, union and difference
 
@@ -232,9 +121,6 @@ uni = a.union(b)
 diff = a.difference(b) #what is in a that is not in b
 print(inter,uni,diff)
 ```
-
-    {2, 4, 6} {1, 2, 3, 4, 5, 6, 7, 8} {1, 3, 5, 7}
-
 
 ### Tuples
 
@@ -250,13 +136,6 @@ tuple_grades = tuple_grades+(100,) #there has to be a , at the end if there is o
 tuple_grades
 ```
 
-
-
-
-    (1, 2, 3, 4, 5, 100)
-
-
-
 ## Loops
 
 
@@ -267,17 +146,6 @@ for character in my_string: #string is an iterable
     print(character)
 ```
 
-    A
-    i
-    s
-    h
-    w
-    a
-    r
-    y
-    a
-
-
 
 ```python
 count = 0
@@ -285,18 +153,6 @@ while count<10:
     print (count)
     count+=1
 ```
-
-    0
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-
 
 ## If-else
 
@@ -308,9 +164,6 @@ if condition:
 else:
     print("Condition not true")
 ```
-
-    Condition not true
-
 
 
 ```python
@@ -564,13 +417,6 @@ my_dictionary['candidates']['Barack Obama']
 ```
 
 
-
-
-    {'state': 'Illinois', 'age': '48'}
-
-
-
-
 ```python
 with open('outputs/output.json','w') as out_file:
     json.dump(my_dictionary,out_file)
@@ -587,7 +433,3 @@ with open('outputs/output.json','r') as in_file:
 print(input_dict)
 print(type(input_dict))
 ```
-
-    {'candidates': {'Barack Obama': {'state': 'Illinois', 'age': '48'}, 'Joe Biden': {'state': 'Michigan', 'age': '76'}, 'Donald Trump': {'state': 'New Jersey', 'age': '77'}}}
-    <class 'dict'>
-
