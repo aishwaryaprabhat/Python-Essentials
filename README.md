@@ -433,3 +433,24 @@ with open('outputs/output.json','r') as in_file:
 print(input_dict)
 print(type(input_dict))
 ```
+
+
+## Creating a Package
+
+- A package begins its life as a regular directory in Python
+- There are two things that make a directory into a package:
+	- Location of the package 
+	- Presence of an __init__.py file (although not necessary from Python3 onwards)
+
+- To check which places Python looks for packages run:
+
+```python
+import sys
+sys.path
+```
+
+- To use `import *` we need to add `__all__ = ['foo', 'bar', 'baz']`
+
+
+### Adding Modules to a Package
+
